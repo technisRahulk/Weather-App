@@ -1,4 +1,4 @@
-console.log('Client side JS file working')
+//console.log('Client side JS file working')
 
 //window.onload=()=>{     //it prevents execution of the code before the DOM loads and can also be achieved by putting script tag at the end
     const weatherForm=document.getElementById('unique')  //selecting the button ID
