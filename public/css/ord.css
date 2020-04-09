@@ -1,0 +1,307 @@
+body{
+			background-color: #0CF733;
+		    height: 100vh;
+		    background-size: cover;
+		    background-position: center;
+		   font-family: tahoma;
+}
+.tummy {
+  position: relative;
+  display: block;
+}
+.tummy .hoverShow1 {
+  visibility: hidden;
+  width: 120px;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 110%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tummy .hoverShow1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tummy:hover .hoverShow1 {
+  visibility: visible;
+  opacity: 1;
+}
+.video iframe{
+	position: absolute;
+	left: 80%;
+	bottom:220px;
+	border-radius: 20%;
+	margin: 15px;
+	height: 400px;
+	width: 520px;
+}
+.bar{
+	background-color: white;
+	border-radius: 40px;
+    font-size: 20px;
+}
+.bar a{
+	padding: 2px 5px;
+	font-size: 20px;
+	font-color:white;
+	text-decoration:none;
+}
+.sp_container{
+	width: 900px;
+	height: 400px;
+	position: relative;
+	margin: 190px auto 0px 40px;
+}
+.sp_content{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	animation: open 0.4s linear 4.4s forwards,sqeeze 0.7s linear 5.5s forwards;
+
+}
+.sp_content:after{
+	content: '';
+	width: 4px;
+	background:#000;
+	height: 120%;
+	position:absolute;
+	left: 50%;
+	top: -120px;
+}
+.sp_container h2{
+	color: #000;
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.9);
+}
+.sp_wrap{
+	width: 400px;
+	padding: 0px 25px;
+	height: 900%;
+	text-align: right;
+	font-size: 30px;
+	line-height: 30px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	top: -70px;
+}
+.sp_wrap span{
+	display: block;
+	flow-into:alpha(opacity=0);
+	opacity: 1;
+}
+.sp_wrap span.sp_mid{
+	filter: alpha(opacity100)
+	opacity:1;
+}
+.sp_container .sp_right h2{
+	color: white;
+	text-shadow: 0px 0px 1px rgba(255,255,255,0.9);
+}
+.sp_wrap span.sp_mid{
+	font-family: tahoma;
+	text-transform: uppercase;
+	font-size: 125px;
+	line-height: 120px;
+	position: relative;
+}
+.sp_left span.sp_top{
+	animation: slideleft 0.5s ease-in 0.7s backwards,
+	fadeout 1s linear 3s backwards;
+}
+.sp_left span.sp_mid{
+	animation: slideleft 0.5s ease-in 1s backwards,
+	moveUp 0.7s linear 4s backwards;
+}
+.sp_left span.sp_bottom{
+	animation: slideleft 0.5s ease-in 1.1s backwards,
+	fadeout 1s linear 4.2s backwards;
+}
+.sp_right span{
+	text-align: left;
+}
+.sp_right span.sp_top{
+	animation: slideRight 0.5s ease-in 2s backwards,
+	fadeout 1s linear 4.4s backwards;
+}
+.sp_right span.sp_mid{
+	animation: slideRight 0.5s ease-in 2.4s backwards,
+	moveUp 0.7s linear 5s forwards;
+}
+.sp_right span.sp_bottom{
+	animation: slideRight 0.5s ease-in 3.0s backwards,
+	fadeout 1s linear 4.7s backwards;
+}
+.sp_wrap i{
+	position: absolute;
+	width: 70px;
+}
+.sp_wrap i: last-child{
+	filter: alpha(opacity=0);
+	opacity: 12;
+	animation: fadeOut 1s linear 2.6s backwards;
+
+}
+.sp_full{
+	position: absolute;
+	font-size: 59px;
+	top: -220px;
+	width: 700px;
+	left: 145px;
+	animation: fadeIn 1s linear 5s backwards;
+}
+.sp_full .tummy{
+	background:#000;
+	color: white;
+	border-radius: 4px;
+	padding: 10px 40px;
+	display: inline-block;
+	font-size: 40px;
+	margin-top: 40px;
+	animation: zoomIn 0.7s ease-in-out 5s backwards;
+}
+.sp_full h2{
+	width: 400px;
+	padding: 0px 50px 0px 0px;
+	float: left;
+	text-align: right;
+}
+.sp_full .tummy:hover{
+	filter: alpha(opacity=80);
+	background-color:red;
+
+}
+.button ul{
+	position: absolute;
+	list-style: none;
+	display: flex;
+	bottom: -420px;
+	float:right;
+	margin-top: 10px;
+    font-color:red;
+
+}
+.button ul li a{
+	text-decoration: none;
+	padding: 8px 10px;
+	font-size: 38px;
+	border:10px solid transparent;
+	transition: 0.6s ease;
+	float: left;
+	text-align: center;	
+	margin-right: 35px;
+	width: 190px;
+    height: 90px;
+    background:#08FDED; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+.but ul{
+	position: absolute;
+	list-style: none;
+	display: flex;
+	bottom: -560px;
+	float:right;
+	margin-top: 10px;
+    font-color:red;
+
+}
+.but ul li a{
+	color: black;
+	text-decoration: none;
+	padding: 8px 10px;
+	font-size: 38px;
+	border:10px solid transparent;
+	transition: 0.6s ease;
+	float: left;
+	text-align: center;	
+	margin-right: 35px;
+	width: 190px;
+    height: 90px;
+    background:red; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+.button ul li :hover{
+
+	background-color: white;
+   border-radius: 70px;
+}
+.but ul li :hover{
+
+	background-color: white;
+   border-radius: 70px;
+}
+@keyframes open{
+	0%{
+		transform: scale(1,0);
+	}
+	100%{
+		transform: scale(1,0);
+	}
+}
+@keyframes squeeze{
+	0%{
+		height:400px;
+	}
+	100%{
+		height:120px;
+	}
+}
+@keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;	}
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;	}
+}
+@keyframes slideLeft{
+	0%{
+		transform: translateX(120%);
+	}
+	100%{
+		transform: translateX(0%);}
+}
+@keyframes slideRight{
+	0%{
+		transform: translateX(-120%);
+	}
+	100%{
+		transform: translateX(0%);}
+}
+@keyframes moveUp{
+	0%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(-170px);}
+}
+@keyframes ZoomIn{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform:scale(1);
+}

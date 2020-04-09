@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+footer{
+    color: aqua;
+    font-size: small;
+    border-top: 1px solid #eeeeee;
+    margin-top: 6px;
+    padding: 0px 0;
+    background-color: burlywood;
+}
+.main-content{
+    flex-grow: 1;
+}
+.error{
+    padding:5vh 5vw;
+}

@@ -1,0 +1,77 @@
+body{
+	margin:0;
+	padding:0;
+	background:url("../img/cofee.jpg");
+	background-size: cover;
+	font-family: sans-serif;
+	background-position: center;
+
+}
+.login_box{
+	width: 320px;
+	height: 420px;
+	color: #fff;
+	background: black;
+	top: 60%;
+	left: 47%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+
+}
+.profile{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	right: 35%;
+	top:-23%;
+	
+	
+}
+h1{
+
+	margin: 0;
+	background: red;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.login_box p{
+    margin:0;
+    background: black;
+    padding: 0;
+    font-weight: bold;
+}
+.login_box input{
+	width: 100%;
+	background-color:black;
+	margin-bottom: 20px;
+}
+.login_box input[type="text"],input[type="password"]
+{
+	border:none;
+	background-color: : black;
+	border-bottom: 1px solid #fff;
+	outline: 40px;
+	height: 40px;
+	color: #fff;
+	font-size: 16;
+}
+.login_box a{
+	background-color: black;
+}
+.login_box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color:#000;
+}
+
+.login_box input[type="submit"]{
+	border:none;
+	outline: none;
+	height: 40px;
+	background: #fff;
+	font-size: 18px;
+}
+
