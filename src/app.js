@@ -1,5 +1,4 @@
 //server side app.js 
-
 const path=require('path')
 const hbs=require('hbs')
 const express=require('express')
@@ -65,7 +64,7 @@ app.get('/weather',(req,res)=>{
         forecast(latitude,longitude,(error,forecastData)=>{
             if(error){
                 return res.send({error})
-            }
+             }
             res.send({
                 forecast:forecastData,
                 location,

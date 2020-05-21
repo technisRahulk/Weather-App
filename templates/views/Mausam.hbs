@@ -3,12 +3,30 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/h.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     </head>
+    <style>
+        body{
+            background-color: rgb(162, 177, 171);
+        }
+    </style>
 <body>
     {{>header}}
-    <p id="msgOne"></p>
-    <p id="msgTwo"></p>
-    {{>footer}}
+    <br><br>
+<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+  <div class="card-header">Welcome</div>
+  <div class="card-body">
+    <h4 class="card-title">Weather details ahead</h4>
+    <p class="card-text" id="msgOne"></p>
+  </div>
+</div>
+<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+  <div class="card-header">Swagatam</div>
+  <div class="card-body">
+    <h4 class="card-title">Mausam ki jaankari</h4>
+    <p class="card-text" id="msgTwo"></p>
+  </div>
+</div>
     <script src="js/app.js"></script>
     
 </body>
